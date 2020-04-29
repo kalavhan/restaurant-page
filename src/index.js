@@ -1,4 +1,6 @@
 import _ from 'lodash';
+import './css/reset.css';
+import './css/main.css';
 
 function createNav(){
   const nav = document.createElement('nav');
@@ -21,12 +23,19 @@ function createNav(){
   navUl.appendChild(homeLi);
   navUl.appendChild(menuLi);
   nav.appendChild(navUl);
-  console.log(nav);
   return nav;
 };
 
+function createHome() {
+  const home = document.createElement('div');
+  home.style.backgroundImage = 'url(../src/assets/home.jpg)';
+  home.classList.add("home")
+  console.log(home);
+  return home;
+}
+
 const content = document.getElementById('content');
 content.appendChild(createNav());
-const heroHeader = document.createElement('div');
+content.appendChild(createHome());
 const weAre = document.createElement('div');
 const ubication = document.createElement('div');
