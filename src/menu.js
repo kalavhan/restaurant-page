@@ -7,11 +7,11 @@ const createElementMenu = (title, price) => {
   itemContainer.appendChild(itemName);
   itemContainer.appendChild(itemPrice);
   return itemContainer;
-}
+};
 
 const createMenu = () => {
   const menuContainer = document.createElement('div');
-  menuContainer.id = "menuContainer";
+  menuContainer.id = 'menuContainer';
   const starters = document.createElement('div');
   const startersTitle = document.createElement('h2');
   startersTitle.innerHTML = 'Starters';
@@ -51,6 +51,6 @@ const createMenu = () => {
   document.getElementById('contactBtn').classList.remove('active');
   document.getElementById('menuBtn').classList.add('active');
   return menuContainer;
-}
+};
 
 export default createMenu;

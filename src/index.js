@@ -1,4 +1,3 @@
-import _ from 'lodash';
 import './css/reset.css';
 import './css/main.css';
 import createNav from './nav';
@@ -28,4 +27,4 @@ document.getElementById('contactBtn').addEventListener('click', () => {
   content.removeChild(currentPage);
   currentPage = createContact();
   content.appendChild(currentPage);
-})
+});

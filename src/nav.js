@@ -1,5 +1,6 @@
-import img from '../src/assets/logo.png';
-function createNav(){
+import img from './assets/logo.png';
+
+function createNav() {
   const nav = document.createElement('nav');
   const navLogo = document.createElement('div');
   const navLogoImg = document.createElement('img');
@@ -27,6 +28,6 @@ function createNav(){
   navUl.appendChild(contactLi);
   nav.appendChild(navUl);
   return nav;
-};
+}
 
 export default createNav;
